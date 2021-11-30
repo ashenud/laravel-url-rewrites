@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4842c22e789d247c4b660e69490545f",
+    "content-hash": "98e1a56bb490ff052c435aff8a25c13b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2698,6 +2698,61 @@
                 }
             ],
             "time": "2021-09-25T23:10:38+00:00"
+        },
+        {
+            "name": "ruthgeridema/laravel-url-rewrites",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ruthgeridema/laravel-url-rewrites.git",
+                "reference": "57a5e4b0d3003f847d0c1a64bfd9a57029adcd94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ruthgeridema/laravel-url-rewrites/zipball/57a5e4b0d3003f847d0c1a64bfd9a57029adcd94",
+                "reference": "57a5e4b0d3003f847d0c1a64bfd9a57029adcd94",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "*",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.8.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RuthgerIdema\\UrlRewrite\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RuthgerIdema\\UrlRewrite\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ruthger Idema",
+                    "email": "ruthger.idema@gmail.com",
+                    "homepage": "https://ide.ma"
+                }
+            ],
+            "description": "Easy URL rewrites in your Laravel application",
+            "homepage": "https://github.com/ruthgeridema/laravel-url-rewrites",
+            "keywords": [
+                "laravel",
+                "rewrite",
+                "url"
+            ],
+            "time": "2020-01-10T12:47:35+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

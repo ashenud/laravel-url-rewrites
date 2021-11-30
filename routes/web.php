@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('cms.homepage.index');
+})->name('home');
+
+Route::get('/checkout', function () {
+    return view('checkout.onepage');
+})->name('checkout');
+
+Route::get('product/{id}', ProductController::class)->name('product');
+Route::get('category/{id}', CategoryController::class)->name('category');
+
+Route::rewrites();
